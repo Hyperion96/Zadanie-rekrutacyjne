@@ -1,0 +1,17 @@
+.nav-language {
+    margin-left: 80px - $navbar-nav-link-padding-x;
+
+    @include media-breakpoint-down(lg) {
+        text-align: right;
+    }
+
+    &__item {
+        color: $dark-blue;
+        transition: .5s;
+
+        &--current {
+            font-weight: 900;
+            color: $primary;
+        }
+    }
+}

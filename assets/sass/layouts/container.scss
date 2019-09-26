@@ -1,0 +1,29 @@
+.main-container {
+    max-width: 1920px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.content-container {
+    margin-bottom: 1.75rem;
+
+    @include media-breakpoint-up(xl) {
+        margin-bottom: 50px;
+    }
+}
+
+.container {
+    &--lg {
+        @include media-breakpoint-up(xl) {
+            max-width: 0;
+        }
+
+        &-no-padding {
+
+            @include media-breakpoint-up(lg) {
+                padding: 0;
+            }
+        }
+    }
+
+}

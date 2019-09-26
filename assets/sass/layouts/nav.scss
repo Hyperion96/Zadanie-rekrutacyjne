@@ -1,0 +1,76 @@
+.nav {
+    &-link {
+        color: #07273E;
+        font-family: Roboto;
+        font-size: 1rem;
+        transition: .2s;
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 80%;
+            height: 1px;
+            background: $light-blue;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: .5s;
+        }
+
+        &:hover {
+            color: $light-blue;
+
+            &:after {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__offer {
+        font-size: 16px;
+        font-family: Roboto;
+        font-weight: 700;
+        color: #003A64;
+        padding: 12px 22px;
+        border-radius: 25px;
+        border: 1px solid #003A64;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        transition: .2s;
+        display: inline-flex;
+
+        &:hover {
+            background: #003A64;
+            color: white;
+            filter: brightness(100%);
+            text-decoration: none;
+        }
+    }
+
+    &__logo {
+        max-height: 83px;
+        transition: .2s;
+
+        @include media-breakpoint-down(md) {
+            max-height: 40px;
+        }
+
+        &:hover {
+            filter: brightness(120%);
+        }
+    }
+
+    &-item__more {
+        @media(min-width:$breakpoint-expand-menu + 1px) {
+            margin-right: 1rem;
+        }
+
+        @media (max-width:$breakpoint-expand-menu) {
+            margin-top: 2rem;
+        }
+
+
+    }
+}

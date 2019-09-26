@@ -1,0 +1,85 @@
+.is-relative {
+    position: relative;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+// @@ spacing
+.text-sm-center-d {
+    @include media-breakpoint-down(sm) {
+        text-align: center !important;
+    }
+}
+
+.text-lg-center-d {
+    @include media-breakpoint-down(lg) {
+        text-align: center !important;
+    }
+}
+
+.text-xxl-left-up {
+    @include media-breakpoint-up(xxl) {
+        text-align: left !important
+    }
+}
+
+// @@ colors
+.is-dark-orange {
+    color: #FCAB10 !important;
+}
+
+.is-white {
+    color: white !important;
+}
+
+// @@ weights
+.is-600 {
+    font-weight: 600 !important;
+}
+
+.is-800 {
+    font-weight: 800 !important;
+}
+
+.is-700 {
+    font-weight: 700 !important;
+}
+
+.is-900 {
+    font-weight: 900 !important;
+}
+
+// @@ utils one use components
+.section__block-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40%;
+
+    &__image {
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+
+    @include media-breakpoint-down(lg) {
+        position: relative;
+        height: 300px;
+        margin: auto;
+        margin-bottom: .75rem;
+        width: 100%;
+    }
+}
+
+// @@ utils one use components end
+.loupe {
+    @include media-breakpoint-down(lg) {
+        max-height: 200px;
+        display: block;
+        margin: auto;
+    }
+}

@@ -1,0 +1,29 @@
+@import '~aos/dist/aos.css';
+@import '~swiper/css/swiper.css';
+
+
+// @@ variables
+@import "./variables.scss";
+
+// @@utils
+@import "utils/**/*.scss";
+
+// @@ botstrap
+@import "bootstrap/scss/bootstrap.scss";
+
+
+
+// @@ pages
+@import "pages/**/*.scss";
+
+// @@layouts
+
+@import "layouts/**/*.scss";
+
+
+
+// @@ components
+@import "./components/**/*.scss";
+
+// @@ base
+@import "base/**/*.scss";

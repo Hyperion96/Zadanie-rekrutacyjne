@@ -1,0 +1,70 @@
+.section {
+    padding: 125px .75rem;
+    position: relative;
+
+
+
+    &--blue {
+        background: #248CCD;
+    }
+
+    &--dark-blue {
+        background: #003A64;
+    }
+
+    &--grey {
+        background: #F2F4F5;
+    }
+
+    &--offer {
+        padding-bottom: 45px;
+        padding-top: 105px;
+    }
+
+    &--numbers {
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+
+    &--mail {
+        padding-top: 100px;
+        padding-bottom: 75px;
+    }
+
+    &--cv {
+        @include media-breakpoint-up(lg) {
+            padding-top: 190px;
+            padding-bottom: 190px;
+        }
+
+    }
+
+    &__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        &--cv {
+
+            background-repeat: no-repeat;
+            background-position: right;
+
+            @include media-breakpoint-up(xxxl) {
+                background-position: 130%;
+            }
+
+            @include media-breakpoint-down(lg) {
+                padding-top: 80px;
+                padding-bottom: 80px;
+                background-position: top;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        padding: 1.75rem .75rem;
+    }
+
+}

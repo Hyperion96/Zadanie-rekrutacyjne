@@ -1,0 +1,42 @@
+.slider {
+    &__block {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+
+        &--small {
+
+            padding-left: .25rem;
+            padding-right: .25rem;
+            flex: 0 0 6vmin;
+
+
+
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
+
+            @include media-breakpoint-up(xxxl) {
+                flex: 0 0 160px;
+            }
+
+        }
+
+        &--mobile {
+            @include media-breakpoint-down(sm) {
+                display: block;
+            }
+        }
+    }
+
+    &__blocks {
+        display: flex;
+        width: 100%;
+
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+}

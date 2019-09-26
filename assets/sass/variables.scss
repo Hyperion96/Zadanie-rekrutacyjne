@@ -1,0 +1,50 @@
+@import '~bootstrap/scss/bootstrap-reboot.scss';
+// modules to customize bootstrap
+
+// @@ colors
+$primary:#07273E;
+$orange:#FCAB10;
+$light-blue:#248CCD;
+$dark-blue:#07273E;
+
+// @@ container
+$container-custom: (xl: 1616px);
+$container-max-widths: map-merge($container-max-widths, $container-custom);
+
+
+
+//@@ grid
+
+
+$grid-gutter-width: 40px;
+
+// @@ grid breakpoints
+
+$grid-breakpoints: map-merge($grid-breakpoints, (xxl: 1408px, xxxl:1690px));
+
+// @@ navbar
+
+
+$navbar-default-link-hover-color: $light-blue;
+
+
+
+
+$navbar-nav-link-padding-x: 12px;
+$navbar-padding-y: 42px;
+$navbar-default-toggle-border-color: $light-blue;
+
+$navbar-inverse-toggle-border-color: $light-blue;
+
+// @@ width
+$max-container-width:1920px !default;
+
+
+// @@ fonts
+$font-family-base: 'Nunito Sans',
+sans-serif;
+
+
+// @@ breakpoint expand
+
+$breakpoint-expand-menu: 1199px;

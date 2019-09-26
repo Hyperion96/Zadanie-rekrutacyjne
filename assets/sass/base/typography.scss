@@ -1,0 +1,77 @@
+.title {
+    color: white;
+    font-size: 2.5rem;
+
+    strong {
+        font-weight: 900;
+    }
+
+    &__element {
+        color: #FCAB10;
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: 4rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: 5rem;
+    }
+
+    @include media-breakpoint-up(xxxl) {
+        font-size: 110px;
+    }
+}
+
+.text-big {
+    color: white;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 1.4rem;
+
+    &--primary {
+        color: #248CCD;
+        font-weight: 700;
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: 42px;
+    }
+}
+
+.title-section {
+    font-size: 2.2rem;
+    color: #003A64;
+    font-weight: 300;
+
+    strong {
+        font-weight: 800;
+    }
+
+    &--light {
+        color: white;
+    }
+
+    &--offer {
+        text-align: center;
+
+        @include media-breakpoint-up(xxl) {
+            text-align: left;
+
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 68px;
+    }
+
+}
+
+.text-regular {
+    font-size: 1rem;
+    line-height: 1.6;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 26px;
+    }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "rekrutacja_zadanie",
+  "version": "1.0.0",
+  "description": "Rekrutacja zadanie",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --watch",
+    "start": "webpack-dev-server",
+    "local": "webpack-dev-server --host 192.168.0.240"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "bootstrap": "^4.3.1",
+    "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "node-sass-glob-importer": "^5.3.2",
+    "node-sass-magic-importer": "^5.3.2",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "sugarss": "^2.0.0",
+    "swiper": "^5.0.3",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.6",
+    "core-js": "^3.2.1",
+    "jquery": "^3.4.1",
+    "lazyload": "^2.0.0-rc.2",
+    "popper.js": "^1.15.0",
+    "regenerator-runtime": "^0.13.3",
+    "vanilla-lazyload": "^12.0.0"
+  }
+}

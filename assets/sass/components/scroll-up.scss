@@ -1,0 +1,41 @@
+@keyframes bounceUp {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+.scroll-up {
+
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffffff82;
+    background: transparent;
+    animation: bounceUp 1s infinite forwards;
+
+    &__arrow {
+        transform: rotate(90deg) scale(.5);
+    }
+
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+
+
+
+}

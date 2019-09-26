@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadanie</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,800,900|Roboto:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+
+
+        <div class="navbar-dummy">
+        </div>
+        <div class="navbar-wrapper">
+            <div class="container">
+                <nav class="navbar navbar-expand-xl navbar-default ">
+                    <a class="navbar-brand" href="#">
+                        <img class="nav__logo" src="assets/images/LOGO.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+
+
+
+                        <svg class="navbar-toggler__svg" width="30" height="30" version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                            xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M491.318,235.318H20.682C9.26,235.318,0,244.577,0,256s9.26,20.682,20.682,20.682h470.636
+       c11.423,0,20.682-9.259,20.682-20.682C512,244.578,502.741,235.318,491.318,235.318z" />
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path d="M491.318,78.439H20.682C9.26,78.439,0,87.699,0,99.121c0,11.422,9.26,20.682,20.682,20.682h470.636
+       c11.423,0,20.682-9.26,20.682-20.682C512,87.699,502.741,78.439,491.318,78.439z" />
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path d="M491.318,392.197H20.682C9.26,392.197,0,401.456,0,412.879s9.26,20.682,20.682,20.682h470.636
+       c11.423,0,20.682-9.259,20.682-20.682S502.741,392.197,491.318,392.197z" />
+                                </g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                        </svg>
+
+
+
+
+
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto align-items-center">
+                            <li class="nav-item active nav-item__more">
+                                <a class="nav__offer" href="#">Oferty pracy <span class="sr-only"></span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Prześlij CV <span class="sr-only"></span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">O nas<span class="sr-only"></span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Blog <span class="sr-only"></span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Faq <span class="sr-only"></span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Kontakt <span class="sr-only"></span></a>
+                            </li>
+                        </ul>
+                        <div class="nav-language">
+                            <span class="nav-language__item nav-language__item--current">
+                                PL
+                            </span>
+                            <span class="nav-language__line">
+                                /
+                            </span>
+                            <a href="#" class="nav-language__item">
+                                EN
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <div data-aos="fade" class="slider-home">
+            <div class="slider-home__overlay">
+                <div class="slider__block slider__block--small slider__block--mobile">
+                    <div class="slider__arrow--prev slider__arrow slider-home-prev">
+                        <img src="assets/images/white-arrow.png" alt="arrow">
+                    </div>
+                    <div class="slider-home__facebook">
+                        <a target="_blank" href="#">
+                            <img src="assets/images/fb.png" alt="facebook">
+                        </a>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="slider-home__pagination">
+                        <div class="swiper-pagination slider-home-pagination text-sm-center-d">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__block slider__block--small">
+                    <div class="slider-home__next slider__arrow slider__arrow--next slider-home-next">
+                        <img src="assets/images/white-arrow.png" alt="arrow">
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-container swiper-home-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <% for(var i = 0; i < 4; i++) { %>
+                    <div style="background-image:url(assets/images/slider-home-bg.jpg)" class="swiper-slide">
+                        <div class="slider__blocks">
+                            <div class="slider__block slider__block--small">
+                            </div>
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div data-aos="fade-right" data-aos-duration="1000" class="col-lg-6">
+                                        <div>
+                                            <h1 class="title text-sm-center-d">
+                                                <strong>Szukasz</strong> <strong
+                                                    class="is-dark-orange">pracy</strong><span
+                                                    class="font-weight-light"> w Szwecji</span>
+                                            </h1>
+                                        </div>
+                                        <div class="mt-4">
+                                            <p class="text-big text-sm-center-d">
+                                                Praesent porta risus elementum,
+                                                fermentum mauris nec, semper libero.
+                                            </p>
+                                        </div>
+                                        <div class="mt-5 text-sm-center-d">
+                                            <a class="button-link button-link--orange" href="#" type="button">
+                                                Czytaj więcej
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div data-aos="fade-left" data-aos-duration="1000" class="col-md-6">
+
+                                        <img class="img-fluid slider-home-image" alt="mecha"
+                                            src="assets/images/sekcja-start-3.png">
+                                        <div class="slider-home-image__blur">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__block slider__block--small">
+                            </div>
+                        </div>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <section class="section">
+                <div class="container">
+                    <div class="row d-md-flex">
+                        <div data-aos="fade-right" data-aos-duration="1000" class="col-xl-6">
+                            <img class="img-fluid lazy loupe" data-src="assets/images/lupa.jpg" alt="loupe">
+                        </div>
+                        <div data-aos="fade-left" data-aos-duration="1000" class="col-xl-6">
+                            <div class="content-container">
+                                <h2 class="title-section text-sm-center-d">
+                                    Zapoznaj się <strong><br>z ofertami pracy</strong>
+                                </h2>
+                            </div>
+                            <div class="content-container">
+                                <p class="text-big text-big--primary">
+                                    Quisque pretium rutrum nunc posuere iaculis. Aliquam vel magna molestie, lobortis
+                                    eros sed, varius neque. Quisque magna nisi.
+                                </p>
+                            </div>
+                            <div class="content-container">
+                                <ul class="list row no-gutters">
+                                    <% jobs.forEach(function(text){ %>
+                                    <li class="list__item col-md-6 mb-1">
+                                        <span class="list__text">
+                                            <%= text %>
+                                        </span>
+                                    </li>
+                                    <% }); %>
+                                </ul>
+                            </div>
+                            <div class="text-sm-center-d">
+                                <a class="button-link button-link--dark" href="#">Sprawdź oferty</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--  SECTION JOB !-->
+            <section class="section section--blue section--numbers">
+                <div class="container">
+                    <h2 data-aos="fade-in" class="title-section text-center title-section--light">
+                        Zdobądź <strong>
+                            swoją nową pracę <br>
+                            w 3 prostych krokach
+                        </strong>
+                    </h2>
+                    <div class="row">
+                        <% boxes.forEach( function(data, i) {  %>
+                        <div data-aos-delay="<%= i * 200 %>" data-aos="fade-in" class="col-xl-4">
+                            <div class="box box-<%=i+1%>">
+                                <div class="box__wrapper">
+                                    <div class="box__content">
+                                        <img class="lazy" alt="computer" src=<%= data.img %>>
+                                        <div class="box__upper-block">
+                                            <h3 class="box__upper-text">
+                                                <%= data.title %>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="box__number"><span><%= i+1 %> </span></div>
+                                    <div class="box__upper-line">
+                                    </div>
+                                </div>
+                                <p class="box__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim elementum
+                                    fringilla. Aenean faucibus aliquam quam, vel varius felis scelerisque eget.
+                                </p>
+                            </div>
+                        </div>
+                        <% }) %>
+                    </div>
+
+
+                    <div class="text-center mt-5">
+                        <a class="button-link button-link--orange" href="#"> Aplikuj
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+            <!--    SECTION JOB END !-->
+            <section class="section section--dark-blue is-relative">
+                <div class="container--lg container">
+                    <div class="section__block-right overflow-hidden">
+                        <div style='background-image:url(assets/images/bg-sekcja.jpg)' data-aos-duration="1000"
+                            data-aos="zoom-out" class="section__block-right__image">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div data-aos="fade-right" data-aos-duration="1000" class="col-xl-6">
+                            <div class="content-container">
+                                <h2 class="title-section title-section--light">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Nullam pulvinar a
+                                        tellus.</strong>
+                                </h2>
+                            </div>
+                            <div class="content-container">
+                                <p class="text-big text-big--primary is-600">
+                                    Vestibulum lacinia pellentesque sollicitudin. Phasellus quis tellusmassa.
+                                </p>
+                            </div>
+                            <div class="content-container">
+                                <p class="text-regular is-white">
+                                    Proin velit augue, feugiat sit amet justo a, tincidunt tempor ex. Praesent quis
+                                    tellus
+                                    at
+                                    dolor
+                                    feugiat feugiat. Nam viverra rhoncus justo, fermentum sagittis quam bibendum ac.
+                                </p>
+                            </div>
+                            <div class="text-sm-center-d">
+                                <a class="button-link button-link--orange" href="#">CZYTAJ WIĘCEJ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--offer section--grey">
+                <div class="container">
+                    <div class="content-container">
+                        <h2 class="title-section title-section--offer">
+                            Najnowsze <strong>Oferty Pracy</strong>
+                        </h2>
+                    </div>
+                </div>
+                <div class="slider__blocks">
+                    <div class="slider__block slider__block--small">
+                        <div class="slider__arrow--prev slider__arrow slider-offer-prev">
+                            <img src="assets/images/blue-arrow.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="slider__block">
+                        <div class="container">
+                            <div class="swiper-container swiper-job-offer">
+                                <div class="swiper-wrapper">
+                                    <% for(var i = 0; i < 4; i++) { %>
+                                    <div class="swiper-slide">
+                                        <div class="job-offer">
+                                            <div class="job-offer__left">
+                                                <div data-aos="zoom-out" data-aos-duration="1000"
+                                                    style="background-image:url(assets/images/image-job-offer.jpg)"
+                                                    class="job-offer__bg">
+                                                </div>
+                                                <div class="job-offer__counter">
+                                                    0<%= i+1 %>
+                                                </div>
+                                            </div>
+                                            <div class="job-offer__right">
+                                                <div data-aos="fade-left" data-aos-duration="1000"
+                                                    class="job-offer__content">
+                                                    <h3 class="job-offer__title">
+                                                        Operator <br><strong class="is-900">Koparki </strong>
+                                                    </h3>
+                                                    <hr class="job-offer__hr">
+                                                    <p class="job-offer__text">
+                                                        Proin luctus arcu id lacus scelerisque porttitor. Maecenas et
+                                                        varius
+                                                        mi.
+                                                        Etiam sit
+                                                        amet
+                                                        erat
+                                                        non sem dictum porta. Pellentesque ligula augue, bibendum eu
+                                                        nibh
+                                                        eu,
+                                                        mollis
+                                                        interdum
+                                                        libero.
+                                                    </p>
+                                                    <div class="job-offer-info">
+                                                        <div class="job-offer-info__item">
+                                                            <figure class="job-offer-info__figure">
+                                                                <img src="assets/images/info-list/loc.png"
+                                                                    alt="localisation pin">
+                                                            </figure>
+                                                            <span>
+                                                                MIASTO / Szwecja
+                                                            </span>
+                                                        </div>
+                                                        <div class="job-offer-info__item">
+                                                            <figure class="job-offer-info__figure">
+                                                                <img src="assets/images/info-list/job.png" alt="job">
+                                                            </figure>
+                                                            <span>
+                                                                PRACA STAŁA
+                                                            </span>
+                                                        </div>
+                                                        <div class="job-offer-info__item">
+                                                            <figure class="job-offer-info__figure">
+                                                                <img src="assets/images/info-list/time.png" alt="time">
+                                                            </figure>
+                                                            <span>
+                                                                2 DNI TEMU
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="job-offer__wrap text-sm-center-d">
+                                                        <a class="button-link button-link--more" href="#">Czytaj
+                                                            więcej</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <% } %>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination job-offer-pagination"></div>
+                            <div class="mt-3 text-center">
+                                <a class="button-link button-link--dark" href="#">
+                                    Więcej ofert</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__block slider__block--small">
+                        <div class="slider__arrow--next slider__arrow slider-offer-next">
+                            <img src="assets/images/blue-arrow.png" alt="arrow">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section--cv section section--blue overflow-hidden">
+                <div data-aos="zoom-out" data-aos-duration="1500" data-bg="url(assets/images/image-bg.png)"
+                    class="section__bg section__bg--cv lazy">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div data-aos="fade-right" data-aos-duration="1000" class="col-lg-6">
+                            <div class="content-container">
+                                <h2 class="title is-white text-center text-lg-left">
+                                    Już teraz <strong class="is-800">wyślij <br> swoje CV</strong>
+                                </h2>
+                            </div>
+                            <div class="content-container">
+                                <p class="text-big text-center text-lg-left">
+                                    Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. <br>
+                                    Proin dui augue, accumsan <br>
+                                    malesuada ex eget,
+                                </p>
+                            </div>
+                            <div class="text-center text-lg-left">
+                                <a href="#" class="button-link button-link--orange">Czytaj więcej</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--dark-blue section--mail">
+                <div class="container">
+                    <div class="row">
+                        <div data-aos="fade-right" data-aos-duration="1000"
+                            class="offset-lg-1 col-lg-5 text-lg-center-d">
+                            <img class="img-fluid lazy" data-src="assets/images/mail.png" alt="mail">
+                        </div>
+                        <div data-aos="fade-left" data-aos-duration="1000" class="col-lg-6">
+                            <div class="content-container">
+                                <h2 class="title-section is-600 is-dark-orange text-center text-lg-left">
+                                    <strong class="is-600">
+                                        Chcesz być </strong> <strong class="is-800">
+                                        na bieżąco?
+                                    </strong>
+                                </h2>
+                                <p class="text-big text-center text-lg-left mt-2">
+                                    Zapisz się do Newslettera
+                                </p>
+                            </div>
+                            <div>
+                                <form id="newsletter" class="newsletter">
+                                    <div class="newsletter__item">
+                                        <input placeholder="text" class="newsletter__input" type="email" required>
+                                    </div>
+                                    <div class="newsletter__item">
+                                        <input type="submit" class="button-link button-link--orange">
+                                    </div>
+                                </form>
+                                <div class="newsletter__message">
+                                    <p class="text-big">
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
+
+        <footer class="footer">
+            <div class="footer__wrap-right">
+                <button id="scroll-up" class="scroll-up">
+                    <img class="scroll-up__arrow" src="assets/images/white-arrow.png" alt="scroll-up">
+                </button>
+            </div>
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__item footer__item--logo">
+                        <a href="#">
+                            <img src="assets/images/logo-white.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="footer__item">
+                        <a class="footer__link" href="#">Polityka prywatności</a>
+                    </div>
+                    <div class="footer__item">
+                        <a class="footer__link" href="#">Warunki użytkowania</a>
+                    </div>
+                    <div class="footer__item">
+                        <a class="footer__link" href="#">Polityka Cookies</a>
+                    </div>
+                    <div class="footer__item">
+                        <a class="footer__link" href="#"> Obowiązek informacyjny</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+.slider__arrow {
+    top: 50%;
+    position: absolute;
+    z-index: 200;
+    transition: .5s;
+    cursor: pointer;
+
+    &.swiper-button-disabled {
+        opacity: 0;
+    }
+
+    &--next {
+        left: 50%;
+        transform: translateX(-50%) rotate(180deg);
+    }
+
+    &--prev {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+
+}
