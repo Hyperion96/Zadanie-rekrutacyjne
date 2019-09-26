@@ -25,6 +25,7 @@
         &--mobile {
             @include media-breakpoint-down(sm) {
                 display: block;
+                flex: 0 0 40px;
             }
         }
     }
