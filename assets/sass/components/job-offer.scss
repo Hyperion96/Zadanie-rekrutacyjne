@@ -51,13 +51,18 @@
         color: #003A64;
         font-weight: 700;
         line-height: 1.2;
-        margin-bottom: 50px;
+        margin-bottom: .75rem;
         font-size: 1.2rem;
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 50px;
+        }
 
         @include media-breakpoint-up(xxl) {
             font-size: 26px;
 
         }
+
     }
 
     &__counter {
@@ -126,7 +131,11 @@
     margin-bottom: 1.25rem;
 
 
-    margin-bottom: 50px;
+
+
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 50px;
+    }
 
 
     @include media-breakpoint-down(md) {
