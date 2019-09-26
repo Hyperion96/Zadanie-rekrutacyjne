@@ -1,14 +1,14 @@
 .slider {
     &__block {
-        flex: 1;
+        flex: 0 1 auto;
         position: relative;
         overflow: hidden;
 
         &--small {
 
-            padding-left: .25rem;
-            padding-right: .25rem;
-            flex: 0 0 6vmin;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            flex: 1 0;
 
 
 
@@ -16,9 +16,9 @@
                 display: none;
             }
 
-            @include media-breakpoint-up(xxxl) {
-                flex: 0 0 160px;
-            }
+            // @include media-breakpoint-up(xxxl) {
+            //     flex: 0 0 160px;
+            // }
 
         }
 

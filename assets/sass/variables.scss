@@ -8,7 +8,7 @@ $light-blue:#248CCD;
 $dark-blue:#07273E;
 
 // @@ container
-$container-custom: (xl: 1616px);
+$container-custom: (xxxl: 1616px, xl:1400px);
 $container-max-widths: map-merge($container-max-widths, $container-custom);
 
 

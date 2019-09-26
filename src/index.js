@@ -101,4 +101,29 @@ newsletter.addEventListener('submit', function (ev) {
     newsletterInput.setAttribute("disabled", true);
 
 
-})
+});
+
+
+
+(function () {
+    const dataOffset = document.querySelectorAll('[data-offset]');
+    console.log(dataOffset);
+
+    dataOffset.forEach((el) => {
+
+        const id = el.dataset.offset;
+
+        const target = document.getElementById(id);
+        const targetOffset = target.getBoundingClientRect().left;
+        el.style.left = targetOffset + "px";
+
+
+
+
+
+    })
+
+})();
+
+
+
