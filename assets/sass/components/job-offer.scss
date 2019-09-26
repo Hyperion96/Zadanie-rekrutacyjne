@@ -125,9 +125,9 @@
     align-items: center;
     margin-bottom: 1.25rem;
 
-    @include media-breakpoint-up(md) {
-        margin-bottom: 50px;
-    }
+
+    margin-bottom: 50px;
+
 
     @include media-breakpoint-down(md) {
         padding: .75rem;
