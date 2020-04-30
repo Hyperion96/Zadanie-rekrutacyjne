@@ -38,7 +38,7 @@
   "dependencies": {
     "aos": "^3.0.0-beta.6",
     "core-js": "^3.2.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lazyload": "^2.0.0-rc.2",
     "popper.js": "^1.15.0",
     "regenerator-runtime": "^0.13.3",
